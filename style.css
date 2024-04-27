@@ -1,61 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@100..900&family=Kiwi+Maru&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-body * {
-    background-color: #F57536;
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+:root {
+    --cor-de-fundo: #F57536;
+    --cor-fonte-destaque: #3C0A6D;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+.principal {
+    height: 100vh;
+    background-image: url("fotos/fundo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 h1 {
     font-family: Indie Flower;
-    color: #3C0A6D;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--cor-fonte-destaque);
+    margin-top: 20%;
+    font-size: 4.5rem;
+    text-align: center;
 }
 
-h2 {
-    font-family: Kiwi Maru;
+.informacoes {
+    text-align: center;
 }
 
-header img {
-    position: relative;
-    width: 100%;
-    align-items: center;
-}
-
-.botao {
+.lista_item {
     font-family: Kodchasan;
+    background-color: #3C0A6D;
+    color: white;
     display: flex;
-    justify-content: flex-end;
-    align-items: right;
-    padding: 16px;
-}
-
-h3 {
-    font-family: Inter;
-    color: white;
-}
-
-p {
-    font-family: Kodchasan;
-    color: #3C0A6D;
-}
-
-button {
-    background-color: #3C0A6D;
-    color: white;
-}
-
-section {
-    display: grid;
-    width: 500px;
-    grid-auto-flow: column;
-    gap: 20px 10px;
-}
-
-footer {
-    background-color: #3C0A6D;
-}
-
-footer i {
-    color:white;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
 }
