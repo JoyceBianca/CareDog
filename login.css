@@ -1,3 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    display: flex; /* Define o container como grid */
+    flex-direction: row-reverse;
+    padding: 40px 40px;
+}
+
+nav {
+    font-family: Kodchasan;
+    background-color: #FFB367;
+    border-radius: 50px;
+    padding: 17px 40px;
+    border: 0;
+    box-shadow: #0000000d 0 0 8px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all .5s ease;
+    height: 7px;
+    width: 68px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+nav:hover {
+    letter-spacing: 3px;
+    background-color: #F5590F;
+    color: #FFB367;
+    box-shadow: #F5590F 0px 7px 29px 0px;
+}
+
+nav:active {
+    letter-spacing: 3px;
+    background-color: #F5590F;
+    color: #FFB367;
+    box-shadow: #F5590F 0px 0px 0px 0px;
+    transform: translate(10px);
+    transition: 100ms;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /*retangulo*/
 .container {
     display: grid; /* Define o container como grid */
@@ -58,7 +107,7 @@
     display: block;
     position: relative;
     max-width: 262px;
-    background-color: #f2f8f9;
+    background-color: black;
     border-radius: 4px;
     padding: 32px 24px;
     margin: 12px;
@@ -67,8 +116,38 @@
     overflow: hidden;
     height: 12rem;
     width: 10rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+i {
+    color: #390153;
 }
 
 .card1:hover::before {
     transform: scale(21);
+}
+
+/*quadrado branco*/
+.centralizar {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.quadrado {
+    background-color: #D9D9D9;
+    color: #B467FF;
+    font-family: Kodchasan;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+    height: 500px;
+    flex-direction: column;
+    border-radius: 40px;
+    font-size: 27px;
+    padding: 10px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0 , 0, 0, 0.3) 0px 3px 7px -3px;
 }
