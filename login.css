@@ -1,153 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@100..900&family=Kiwi+Maru&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
     margin: 0;
-    padding: 0;
+    font-family: Inter;
 }
 
-.button {
-    display: flex; /* Define o container como grid */
-    flex-direction: row-reverse;
-    padding: 40px 40px;
-}
-
-nav {
-    font-family: Kodchasan;
-    background-color: #FFB367;
-    border-radius: 50px;
-    padding: 17px 40px;
-    border: 0;
-    box-shadow: #0000000d 0 0 8px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    font-size: 12px;
-    transition: all .5s ease;
-    height: 7px;
-    width: 68px;
-    text-align: center;
-    margin-left: 20px;
-}
-
-nav:hover {
-    letter-spacing: 3px;
-    background-color: #F5590F;
-    color: #FFB367;
-    box-shadow: #F5590F 0px 7px 29px 0px;
-}
-
-nav:active {
-    letter-spacing: 3px;
-    background-color: #F5590F;
-    color: #FFB367;
-    box-shadow: #F5590F 0px 0px 0px 0px;
-    transform: translate(10px);
-    transition: 100ms;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-/*retangulo*/
-.container {
-    display: grid; /* Define o container como grid */
-    grid-template-columns: 1fr 1fr 1fr; /* Divide o container em três colunas iguais */
-    gap: 50px; /* Adiciona espaçamento entre as colunas */
-}
-
-.coluna {
-    padding: 100px; /* Adiciona espaçamento interno */
-}
-
-.go-arrow {
-    margin-top: -4px;
-    margin-right: -4px;
-    color: black;
-}
-
-.card1:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -16px;
-    right: -16px;
-    background: #00838d;
-    height: 32px;
-    width: 32px;
-    border-radius: 32px;
-    transform: scale(1);
-    transform-origin: 50% 50%;
-    transition: transform 0.25s ease-out;
-}
-
-.card1:hover p {
-    transition: all 0.3s ease-out;
-    color: rgba(255, 255, 255, 0.8);
-
-}
-.card1:hover h3 {
-    transition: all 0.3s ease-out;
-    color: black;
-}
-
-.go-corner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    background-color: #00838d;
-    border-radius: 0 4px 0 32px;
-}
-
-.card1 {
-    display: block;
-    position: relative;
-    max-width: 262px;
-    background-color: black;
-    border-radius: 4px;
-    padding: 32px 24px;
-    margin: 12px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
-    height: 12rem;
-    width: 10rem;
-    font-size: 20px;
-    text-align: center;
-}
-
-i {
-    color: #390153;
-}
-
-.card1:hover::before {
-    transform: scale(21);
-}
-
-/*quadrado branco*/
-.centralizar {
-    display: flex;
-    justify-content: center;
+.main-login {
+    width: 100vw;
     height: 100vh;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.quadrado {
-    background-color: #D9D9D9;
-    color: #B467FF;
-    font-family: Kodchasan;
-    text-align: center;
+.left-login {
+    width: 50vw;
+    height: 100vh;
     display: flex;
-    justify-content: space-evenly;
-    width: 800px;
-    height: 500px;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    border-radius: 40px;
-    font-size: 27px;
-    padding: 10px 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0 , 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #FEE3D5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #FC5B0C;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(255, 147, 96, 0.5);
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: black;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #FEE3D5;
+    background: #F57536;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgba(255, 147, 96, 0.5);
+    box-sizing: border-box;
 }
