@@ -76,9 +76,9 @@
     margin-bottom: 10px;
 }
 
-.textfield > input::placeholder {
+/*.textfield > input::placeholder {
     color: black;
-}
+}*/
 
 .btn-login {
     width: 100%;
@@ -95,4 +95,7 @@
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px rgba(255, 147, 96, 0.5);
     box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
 }
