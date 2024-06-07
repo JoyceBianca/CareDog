@@ -15,6 +15,7 @@
                         <h1>Tutor Caredog</h1>
                     </div>
                 </div>
+
                 <div class="form-secund">
                     <div class="secund-title">
                         <h2>Informações pessoais</h2>
@@ -50,7 +51,7 @@
     
                 <div class="gender-inputs">
                     <div class="gender-title">
-                        <h6>Gênero</h6>
+                        <h2>Genero</h2>
                     </div>
     
                     <div class="gender-group">
@@ -75,9 +76,82 @@
                         </div>
                     </div>
                 </div>
+            </form>
+        </div>
+
+        <div class="form">
+            <form action="#">
+                <div class="form-secund">
+                    <div class="logra-title">
+                        <h2>Endereço</h2>
+                    </div>
+                </div>
+        
+                <div class="logra-group">
+                    <div class="input-box">
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text" name="cep" maxlength="9" pattern="\d{5}-?\d{3}" placeholder="xxxxx-xxx" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <label for="logradouro">Logradouro</label>
+                        <input id="logradouro" type="text" name="logradouro" maxlength="100" placeholder="Ex:Rua das Flores" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="house-number">N°</label>
+                        <input id="house-number" type="text" name="house-number" pattern="[0-9]{1,5}[A-Za-z]?" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" name="complemento" maxlength="50" placeholder="Apto, Bloco, Andar, etc.">
+                    </div>
+                </div>
+            
+                <div class="form-secund">
+                    <div class="dog-title">
+                        <h2>Cachorro</h2>
+                    </div>
+                </div>
+
+                <div class="dog-group">
+                    <div class="input-box">
+                        <label for="dogname">Nome</label>
+                        <input id="dogname" type="text" name="dogname" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="race">Raça</label>
+                        <input id="race" type="text" name="race" required>
+                    </div>
+                        
+                    <div class="input-box">
+                        <label for="age">Idade</label>
+                        <input id="age" type="text" name="age" required>
+                    </div>
+    
+                    <div class="custom-select-wrapper">
+                        <label>Temperamento</label>
+                        <select id="custom-select">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Amigável e sociável</option>
+                            <option>Tímido e sensível</option>
+                            <option>Energético e brincalhão</option>
+                            <option>Calmo e relaxado</option>
+                            <option>Independente e reservado</option>
+                            <option>Inteligente e treinável</option>
+                        </select>
+                    </div>
+    
+                    <div class="input-box">
+                        <label>Cuidados especiais</label>
+                        <textarea rows="6" style="width: 20em;" id="carefull" nome="carefull"></textarea>
+                    </div>
+                </div>
                 
                 <div class="continue-button">
-                    <button><a href="#">Entrar</a></button>
+                    <button><a href="perfil.html">Entrar</a></button>
                 </div>
             </form>
         </div>
