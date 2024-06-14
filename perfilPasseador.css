@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.retanguloFundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F57536;
+    border-bottom-left-radius: 100PX;
+    border-bottom-right-radius: 100px;
+    height: 400px;
+    width: auto;
+    
+    
+    
+
+    
+}
+
+
+    
+.base {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+    position: absolute;
+}
+.retanguloInfo {
+    display: flex;
+    background-color: #DC4B04;
+    height: 30%;
+    width: 50%;
+    border-radius: 100px;
+
+    
+   
+}
