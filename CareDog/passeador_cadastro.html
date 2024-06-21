@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Passeador</title>
+    <link rel="stylesheet" href="passeador_cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Tutor Caredog</h1>
+                    </div>
+                </div>
+
+                <div class="form-secund">
+                    <div class="secund-title">
+                        <h2>Informações pessoais</h2>
+                    </div>
+                </div>
+    
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+                </div>
+    
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h2>Genero</h2>
+                    </div>
+    
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+    
+                        <div class="gender-input">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+    
+                        <div class="gender-input">
+                            <input type="radio" id="others" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+    
+                        <div class="gender-input">
+                            <input type="radio" id="none" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="form">
+            <form action="#">
+                <div class="form-secund">
+                    <div class="logra-title">
+                        <h2>Endereço</h2>
+                    </div>
+                </div>
+        
+                <div class="logra-group">
+                    <div class="input-box">
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text" name="cep" maxlength="9" pattern="\d{5}-?\d{3}" placeholder="xxxxx-xxx" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <label for="logradouro">Logradouro</label>
+                        <input id="logradouro" type="text" name="logradouro" maxlength="100" placeholder="Ex:Rua das Flores" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="house-number">N°</label>
+                        <input id="house-number" type="text" name="house-number" pattern="[0-9]{1,5}[A-Za-z]?" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" name="complemento" maxlength="50" placeholder="Apto, Bloco, Andar, etc.">
+                    </div>
+                </div>
+            
+                <div class="form-secund">
+                    <div class="dog-title">
+                        <h2>Cachorro</h2>
+                    </div>
+                </div>
+
+                <div class="dog-group">
+                    <div class="input-box">
+                        <label for="dogname">Nome</label>
+                        <input id="dogname" type="text" name="dogname" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="race">Raça</label>
+                        <input id="race" type="text" name="race" required>
+                    </div>
+                        
+                    <div class="input-box">
+                        <label for="age">Idade</label>
+                        <input id="age" type="text" name="age" required>
+                    </div>
+    
+                    <div class="custom-select-wrapper">
+                        <label>Temperamento</label>
+                        <select id="custom-select">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Amigável e sociável</option>
+                            <option>Tímido e sensível</option>
+                            <option>Energético e brincalhão</option>
+                            <option>Calmo e relaxado</option>
+                            <option>Independente e reservado</option>
+                            <option>Inteligente e treinável</option>
+                        </select>
+                    </div>
+    
+                    <div class="input-box">
+                        <label>Cuidados especiais</label>
+                        <textarea rows="6" style="width: 20em;" id="carefull" nome="carefull"></textarea>
+                    </div>
+                </div>
+                
+                <div class="continue-button">
+                    <button><a href="perfil.html">Entrar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
