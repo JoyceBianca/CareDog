@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+
+.retanguloFundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F57536;
+    border-bottom-left-radius: 100PX;
+    border-bottom-right-radius: 100px;
+    height: 350px;
+    width: auto;
+
+    
+}
+
+.circulo1 {
+    position: fixed;
+    right: 70%;
+    bottom: 60%;
+    width: 509px;
+    height: 523px;
+    background-color: #FC5B0C;
+    border-radius: 50%;
+    opacity: 50%;
+
+}
+
+.circulo2 {
+    position: fixed;
+    left: 78%;
+    bottom: 53%;
+    width: 350px;
+    height: 350px;
+    background-color: #F48E36;
+    border-radius: 50%;
+    
+
+}
+.imagemPerfil {
+    position: fixed;
+    top: 1%;
+    width: 130px;
+    height: 130px;
+    background-color: rgb(252, 251, 251);
+    border-radius: 50%;
+}
+
+.infoPasseador{
+    display: flex;
+    position: fixed;
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    flex-direction: column;
+    top: 21%;
+}
+p {
+    padding: 5px;
+}
+    
+.base {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+}
+.retanguloInfo {
+    display: flex;
+    background-color: #DC4B04;
+    height: 25%;
+    width: 50%;
+    border-radius: 100px;
+
+    
+   
+}
