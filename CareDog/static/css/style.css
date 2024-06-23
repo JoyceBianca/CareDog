@@ -43,14 +43,13 @@ nav {
     display: flex;
     justify-content:right;
     gap: 10px;
-    margin: 20px;
+    padding: 20px;
     
 }
 button {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     padding: 10px 10px;
     align-items: center;
     font-family: Kodchasan;
@@ -66,22 +65,20 @@ button {
     outline: 0;
     color: white;
     margin-top: 10px;
-    margin-right: 20px;
-
-    
+    margin-right: 20px;    
 }
 
 .titulo{
     font-family: 'Source Sans Pro', sans-serif;
-  
     
 }
 
-nav:hover {
+button:hover {
     letter-spacing: 3px;
     background-color: #3C0A6D;
     color: var(--cor-nova);
     box-shadow: #3C0A6D 0px 7px 29px 0px;
+    cursor: pointer;
 }
 
 nav:active {
@@ -96,6 +93,7 @@ nav:active {
 /*imagem da pagina*/
 .principal {
     height: 100vh;
+    background-image: url(../fotos/fundo.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -119,7 +117,9 @@ h1 {
 }
 
 .coluna {
+    display: flex;
     padding: 75px; /* Adiciona espaçamento interno */
+    justify-content: center;
 }
 
 .go-arrow {
@@ -167,17 +167,18 @@ h1 {
 }
 
 .card1 {
-    display: block;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
     position: relative;
-    max-width: 262px;
+    min-width: 280px;
     background-color: var(--cor-texto);
     border-radius: 4px;
     padding: 70px 40px;
-    margin: 50px;
     text-decoration: none;
     z-index: 0;
     overflow: hidden;
-    height: 12rem;
+    min-height:15rem;
     width: 10rem;
     font-size: 19px;
     text-align: center;
