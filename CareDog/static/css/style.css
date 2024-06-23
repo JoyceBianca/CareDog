@@ -49,7 +49,6 @@ nav {
 button {
     display: flex;
     justify-content: center;
-    /* flex-direction: row-reverse; */
     padding: 10px 10px;
     align-items: center;
     font-family: Kodchasan;
