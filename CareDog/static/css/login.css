@@ -83,7 +83,8 @@
 .btn-login {
     width: 100%;
     padding: 16px 0px;
-    margin: 25px;
+    /*margin: px;*/
+    margin: 5% 0% 0% 0%;
     border: none;
     border-radius: 8px;
     outline: none;

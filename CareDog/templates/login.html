@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../static/css/login.css">
-    <script src="{{ url_for('static', filename='js/loginUsuario.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/loginRota.js') }}"></script>
 </head>
 <body>
     <div class="main-login">
@@ -16,15 +14,18 @@
         <div class="right-login">
             <div class="card-login">
                 <h1>LOGIN</h1>
+                <form class="textfield"action="/login" id="login" method="post">
                     <div class="textfield">
                         <label for="usuario">Usuário</label>
-                        <input type="text" name="nome"> <!--placeholder="Informe o seu usuário"-->
+                        <input type="text" name="nome" id="nome" required placeholder="Digite seu Nome"> <!--placeholder="Informe o seu usuário"-->
                     </div>
                     <div class="textfield">
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha"> <!-- placeholder="Informe sua senha" -->
+                        <input type="password" name="senha" id="senha" required placeholder="Digite sua Senha"> <!-- placeholder="Informe sua senha" -->
                     </div>
-                    <a href="passeador_cadastro.html" class="btn-login" target="_blank">Login</a>
+                        <button class="btn-login" type="submit" id="btn_login">Login</button>
+                    </form>
+                    <!--<a href="passeador_cadastro.html" target="_blank">Login</a>-->
             </div>
         </div>
     </div>

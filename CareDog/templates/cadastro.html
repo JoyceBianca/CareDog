@@ -14,15 +14,17 @@
         <div class="right-sign">
             <div class="card-sign">
                 <h1>CADASTRAR</h1>
-                <div class="textfield">
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email"> <!--placeholder="Informe o seu usuário"-->
-                </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha"> <!-- placeholder="Informe sua senha" -->
-                </div>
-                <a href="passeador_cadastro.html" class="btn-sign" target="_blank">Cadastrar</a>
+                <form class="textfield"action="/CadastrarUsuario" id="CadastrarUsuario" method="post">
+                    <div class="textfield">
+                        <label for="nome">Nome de Usuario</label>
+                        <input type="text" name="nome" id="nome"> <!--placeholder="Informe o seu usuário"-->
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha"> <!-- placeholder="Informe sua senha" -->
+                    </div>
+                    <button class="btn-sign" type="submit" id="btn-sign">Cadastrar</button>
+                </form>
             </div>
         </div>
     </div>
