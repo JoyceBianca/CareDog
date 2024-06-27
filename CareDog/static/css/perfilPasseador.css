@@ -76,6 +76,7 @@ p {
     height: 700px;
     width: 100%;
     position: absolute;
+    border-radius: 100px;
 }
 .retanguloInfo {
     display: flex;
@@ -85,15 +86,25 @@ p {
     height: 25%;
     width: 50%;
     border-radius: 100px;
+    align-items: center;
     
 }
 
-.ul {
+ul {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
    
     
 }
 
 li {
-   
-   
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30px;
+    list-style-type: none;
+    position: relative;
 }
