@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../static/css/cadastro.css">
+</head>
+<body>
+    <div class="main-sign">
+        <div class="left-sign">
+            <img src="../static/svgs/mulher.svg" alt="Cachorro">
+        </div>
+        <div class="right-sign">
+            <div class="card-sign">
+                <h1>CADASTRAR</h1>
+                <form class="textfield"action="/CadastroAvancado" id="CadastrarUsuario" method="post">
+                    <div class="textfield">
+                        <label for="nome">Nome de Usuario</label>
+                        <input type="text" name="nome" id="nome"> <!--placeholder="Informe o seu usuário"-->
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha"> <!-- placeholder="Informe sua senha" -->
+                    </div>
+                    <button class="btn-sign" type="submit" id="btn-sign">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

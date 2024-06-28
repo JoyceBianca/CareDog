@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@100..900&family=Kiwi+Maru&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    font-family: Inter;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #FEE3D5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #FC5B0C;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(255, 147, 96, 0.5);
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    color: black;
+    margin-bottom: 10px;
+}
+
+/*.textfield > input::placeholder {
+    color: black;
+}*/
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    /*margin: px;*/
+    margin: 5% 0% 0% 0%;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #FEE3D5;
+    background: #F57536;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgba(255, 147, 96, 0.5);
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+}
