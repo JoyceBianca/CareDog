@@ -10,23 +10,31 @@
     
 }
 
+body{
+    background-color: #FDD1BD;
+}
+
+
 .retanguloFundo {
     display: flex;
+    position: fixed;
+    z-index: 0;
     align-items: center;
     justify-content: center;
     background-color: #F57536;
     border-bottom-left-radius: 100PX;
     border-bottom-right-radius: 100px;
-    height: 350px;
-    width: auto;
+    height: 370px;
+    width: 100%;
+    
 
     
 }
 
 .circulo1 {
-    position: absolute;
-    right: 70%;
-    bottom: 60%;
+    position: relative;
+    right: 30%;
+    bottom: 50%;
     width: 509px;
     height: 523px;
     background-color: #FC5B0C;
@@ -36,9 +44,9 @@
 }
 
 .circulo2 {
-    position: absolute;
-    left: 78%;
-    bottom: 53%;
+    position: relative;
+    left: 20%;
+    bottom: 4%;
     width: 350px;
     height: 350px;
     background-color: #F48E36;
@@ -51,24 +59,30 @@
     top: 1%;
     width: 130px;
     height: 130px;
-    background-color: rgb(252, 251, 251);
+    /*background-color: rgb(252, 251, 251);*/
     border-radius: 50%;
+    background-image: url("/CareDog/static/fotos/fotoPerfil.jpg");
 }
 
 .infoPasseador{
     display: flex;
-    position: absolute;
+    position: fixed;
     font-family: "Kodchasan", sans-serif;
     font-weight: 200;
     font-style: normal;
     text-align: center;
     flex-direction: column;
-    top: 21%;
+    align-items: center;
+    justify-content: center;
+    top: 14%;
 }
-p {
+
+
+p {   
     padding: 5px;
 }
     
+
 .base {
     display: flex;
     align-items: center;
@@ -80,24 +94,34 @@ p {
 }
 .retanguloInfo {
     display: flex;
-    flex-direction: row;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
     justify-content: center;
     background-color: #DC4B04;
-    height: 25%;
+    height: 24%;
     width: 50%;
     border-radius: 100px;
-    align-items: center;
+    margin-top: 3%;
+    flex-wrap: nowrap;
+    align-content: center;
+    
     
 }
 
-ul {
+.infoCima {
     position: relative;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
     
-   
-    
+}
+
+.infoBaixo {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 li {
@@ -107,4 +131,14 @@ li {
     font-size: 30px;
     list-style-type: none;
     position: relative;
+}
+
+.infoBaixo li {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    list-style-type: none;
+    position: relative;
+    flex-wrap: wrap;
 }
